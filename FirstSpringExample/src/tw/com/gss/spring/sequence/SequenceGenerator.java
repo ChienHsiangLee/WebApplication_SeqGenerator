@@ -2,7 +2,7 @@ package tw.com.gss.spring.sequence;
 
 import java.text.DecimalFormat;
 
-public class SequenceGenerator {
+public class SequenceGenerator implements ISeqGenerator {
 	
 	private String prefix;
 	private String suffix;
@@ -31,7 +31,7 @@ public class SequenceGenerator {
 		this.initial = initial;
 	}
 
-	public synchronized String getSequence() {
+	public synchronized String  getSequence() {
 		StringBuffer buffer = new StringBuffer();
 		buffer.append(this.prefix);
 		DecimalFormat formatter = new DecimalFormat("0000");
