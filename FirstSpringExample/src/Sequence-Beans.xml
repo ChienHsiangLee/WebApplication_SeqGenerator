@@ -14,7 +14,7 @@
 		<property name="pattern" value="yyMMdd"></property>
 		<property name="prefix" value="XX"></property>
 		<property name="suffix" value="Z"></property>
-		<property name="initial" value="0"></property>
+		<property name="initial" value="1"></property>
 	</bean>
 
 </beans>
