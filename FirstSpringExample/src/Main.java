@@ -16,13 +16,10 @@ public class Main {
 			ApplicationContext context = new ClassPathXmlApplicationContext("Sequence-Beans.xml");
 			
 			ISeqGenerator generator = (ISeqGenerator) context.getBean("sequenceGenerator");
-			
-			System.out.println(generator.getSequence());
-			System.out.println(generator.getSequence());
-			System.out.println(generator.getSequence());
-			System.out.println(generator.getSequence());
-			System.out.println(generator.getSequence());
-			System.out.println(generator.getSequence());			
+			int limit=6;
+			for (int i=0; i<limit; i++) {
+				System.out.println(generator.getSequence());
+			}		
 		} catch (BeanInitializationException e) {
 			// TODO Auto-generated catch block
 			System.out.println("error:"+e.toString());

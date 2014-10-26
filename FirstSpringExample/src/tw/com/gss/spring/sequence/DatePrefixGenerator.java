@@ -15,6 +15,11 @@ public class DatePrefixGenerator implements ISeqGenerator{
 	
 	
 	
+	public DatePrefixGenerator() {
+		super();
+	}
+
+
 	public DatePrefixGenerator(DateFormat formatter, String prefix,
 			String suffix, int initial) {
 		super();
