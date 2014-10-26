@@ -13,6 +13,18 @@ public class DatePrefixGenerator implements ISeqGenerator{
 	private int initial;
 	private int counter;
 	
+	
+	
+	public DatePrefixGenerator(DateFormat formatter, String prefix,
+			String suffix, int initial) {
+		super();
+		this.formatter = formatter;
+		this.prefix = prefix;
+		this.suffix = suffix;
+		this.initial = initial;
+	}
+
+
 	public synchronized String getSequence() {
 		StringBuffer buffer = new StringBuffer();
 		buffer.append(this.prefix);
