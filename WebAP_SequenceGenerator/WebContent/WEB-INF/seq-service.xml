@@ -9,9 +9,9 @@
 
 	<bean name="sequenceGenerator" class="tw.edu.nsysu.mis.sequence.SequenceGenerator">
 		<property name="prefix">
-			<value>30</value></property>
+			<value>10</value></property>
 		<property name="suffix">
-			<value>A</value></property>
+			<value>Z</value></property>
 		<property name="initial">
 			<value>100000</value></property>
 		<property name="prefixGenerator">
